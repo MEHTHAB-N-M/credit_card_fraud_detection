@@ -1,0 +1,9 @@
+scikit-learn
+seaborn
+matplotlib
+flask
+flask-socketio
+gunicorn
+pandas
+joblib
+eventlet

@@ -1,0 +1,9 @@
+services:
+  - type: web
+    name: credit-card-fraud-detection
+    env: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --worker-class eventlet -w 1 app:app
+    envVars:
+      - key: POETRY_VERSION
+        value: 1.6.1
